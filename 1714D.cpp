@@ -8,7 +8,7 @@ using namespace std;
 
 using i64 = int64_t;
 
-bool is_substring(const string& body, const string& needle, i64 p) {
+bool is_substring(const string &body, const string &needle, i64 p) {
   if (p < 0 || body.length() < needle.length() + p) {
     return false;
   }
@@ -21,7 +21,7 @@ bool is_substring(const string& body, const string& needle, i64 p) {
 
 i64 fit(const string &body, const string &needle, i64 p) {
   for (i64 i = 0; i < needle.length(); i++) {
-    if (is_substring(body, needle, p-i)) {
+    if (is_substring(body, needle, p - i)) {
       return needle.length() - i;
     }
   }
