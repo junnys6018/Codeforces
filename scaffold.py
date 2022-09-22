@@ -1,10 +1,9 @@
 import argparse
 
-template = '''#include <iostream>
-#include <vector>
+template = '''#include <bits/stdc++.h>
 using namespace std;
 
-using i64 = int64_t;
+using li = int64_t;
 
 // g++ {name}.cpp -o {name}.out && ./{name}.out < {name}.in
 
@@ -12,9 +11,9 @@ void solve() {{
 }}
 
 int main() {{
-    i64 t;
+    li t;
     cin >> t;
-    for (i64 i = 0; i < t; i++) {{
+    for (li i = 0; i < t; i++) {{
         solve();
     }}
 }}
